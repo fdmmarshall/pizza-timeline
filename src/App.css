@@ -1,10 +1,46 @@
 .App {
   text-align: center;
-  background: linear-gradient(78.84deg, #e63c01 3%, #fd8c00 96.8%);
+  font-family: "Open Sans", sans-serif;
+}
+
+.Text-wrapper {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.Text-wrapper::before,
+.Text-wrapper::after {
+  content: "";
+  flex: 1;
+  border-bottom: 2px solid #ffffff;
+}
+
+.Text-wrapper:not(:empty)::before {
+  margin-right: 0.25em;
+}
+
+.Text-wrapper:not(:empty)::after {
+  margin-left: 0.25em;
+}
+
+.Title-text {
+  position: relative;
+  display: inline-block;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 0px 25px;
 }
 
 .Pizza-logo {
-  height: 40vmin;
+  height: 30vmin;
   pointer-events: none;
 }
 
