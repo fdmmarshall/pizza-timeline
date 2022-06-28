@@ -1,5 +1,6 @@
 import React from "react";
 import Title from "components/title";
+import PizzaSection from "components/pizza";
 import "./App.css";
 
 function App() {
@@ -8,7 +9,9 @@ function App() {
       <header className="App-header">
         <Title />
       </header>
-      <section></section>
+      <section>
+        <PizzaSection />
+      </section>
     </div>
   );
 }
