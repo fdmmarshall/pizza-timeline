@@ -1,4 +1,5 @@
 import { classNames } from "../helpers/helperFunctions";
+import PizzaTimeline from "./PizzaTimeline";
 
 interface ContainerProps {
   display: boolean;
@@ -12,6 +13,8 @@ export default function TimelineContainer({ display }: ContainerProps) {
         "Timeline-container"
       )}
       id="white-space"
-    ></div>
+    >
+      <PizzaTimeline display={display} />
+    </div>
   );
 }
