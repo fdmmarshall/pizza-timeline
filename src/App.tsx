@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import Title from "../src/components/title";
-import WholePizza from "../src/components/wholePizza";
-import SplitPizza from "../src/components/SplitPizza";
+import Title from "components/Title";
+import WholePizza from "components/WholePizza";
+import SplitPizza from "components/SplitPizza";
 import "./App.css";
 
 function App() {
