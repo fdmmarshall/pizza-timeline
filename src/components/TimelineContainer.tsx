@@ -1,10 +1,10 @@
 import { classNames } from "../helpers/helperFunctions";
 
-interface TimelineProps {
+interface ContainerProps {
   display: boolean;
 }
 
-export default function PizzaTimeline({ display }: TimelineProps) {
+export default function TimelineContainer({ display }: ContainerProps) {
   return (
     <div
       className={classNames(
