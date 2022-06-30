@@ -14,6 +14,7 @@ export default function TimelineContainer({ display }: ContainerProps) {
       )}
       id="white-space"
     >
+      <h1>THE ORIGIN STORY OF PIZZA</h1>
       <PizzaTimeline display={display} />
     </div>
   );

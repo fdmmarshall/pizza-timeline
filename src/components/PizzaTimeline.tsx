@@ -18,49 +18,73 @@ export default function TimelineContainer({ display }: PizzaTimelineProps) {
         <li className="dot">
           <div className="timestamp">
             <span className="icon"></span>
-            <span className="pizza-info"></span>
+            <span className="pizza-info">
+              <h3>79 A.D.</h3>
+              <p></p>
+            </span>
           </div>
         </li>
         <li className="dot">
           <div className="timestamp">
             <span className="icon"></span>
-            <span className="pizza-info"></span>
+            <span className="pizza-info">
+              <h3>1522</h3>
+              <p></p>
+            </span>
           </div>
         </li>
         <li className="dot">
           <div className="timestamp">
             <span className="icon"></span>
-            <span className="pizza-info"></span>
+            <span className="pizza-info">
+              <h3>1880</h3>
+              <p></p>
+            </span>
           </div>
         </li>
         <li className="dot">
           <div className="timestamp">
             <span className="icon"></span>
-            <span className="pizza-info"></span>
+            <span className="pizza-info">
+              <h3>1889</h3>
+              <p></p>
+            </span>
           </div>
         </li>
         <li className="dot">
           <div className="timestamp">
             <span className="icon"></span>
-            <span className="pizza-info"></span>
+            <span className="pizza-info">
+              <h3>1905</h3>
+              <p></p>
+            </span>
           </div>
         </li>
         <li className="dot">
           <div className="timestamp">
             <span className="icon"></span>
-            <span className="pizza-info"></span>
+            <span className="pizza-info">
+              <h3>1943</h3>
+              <p></p>
+            </span>
           </div>
         </li>
         <li className="dot">
           <div className="timestamp">
             <span className="icon"></span>
-            <span className="pizza-info"></span>
+            <span className="pizza-info">
+              <h3>1958</h3>
+              <p></p>
+            </span>
           </div>
         </li>
         <li className="dot">
           <div className="timestamp">
             <span className="icon"></span>
-            <span className="pizza-info"></span>
+            <span className="pizza-info">
+              <h3>TODAY</h3>
+              <p></p>
+            </span>
           </div>
         </li>
       </ul>
