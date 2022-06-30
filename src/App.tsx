@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import Title from "components/title";
-import PizzaSection from "components/pizza";
+import Title from "../src/components/title";
+import WholePizza from "../src/components/wholePizza";
+import SplitPizza from "../src/components/SplitPizza";
 import "./App.css";
 
 function App() {
@@ -13,7 +14,8 @@ function App() {
         <Title />
       </header>
       <footer className="App-footer">
-        <PizzaSection display={wholePizzaDisplay} />
+        <WholePizza display={wholePizzaDisplay} />
+        <SplitPizza display={splitPizzaDisplay} />
       </footer>
     </div>
   );

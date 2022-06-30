@@ -5,7 +5,7 @@ interface PizzaProps {
   display: boolean;
 }
 
-export default function PizzaSection({ display }: PizzaProps) {
+export default function WholePizza({ display }: PizzaProps) {
   return (
     <div className="Pizza-section" id="Pizza-section">
       <img
