@@ -12,13 +12,13 @@ export default function PizzaSection({ display }: PizzaProps) {
       <img
         src={topPizzaHalf}
         alt="Top pizza half"
-        className={classNames(display === true ? "display" : "hide", "Pizza")}
+        className={classNames(display === true ? "display" : "hide")}
       />
       <div id="White-space"></div>
       <img
         src={bottomPizzaHalf}
         alt="Bottom pizza half"
-        className={classNames(display === true ? "display" : "hide", "Pizza")}
+        className={classNames(display === true ? "display" : "hide")}
       />
     </div>
   );
