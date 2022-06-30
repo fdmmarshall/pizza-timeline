@@ -42,17 +42,6 @@
   padding: 0px 25px;
 }
 
-.Pizza-logo {
-  height: 30vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .Pizza-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .Pizza-section {
   display: flex;
   flex-direction: column;
@@ -80,7 +69,7 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #ffffff;
   background: linear-gradient(90deg, #e63c01 3%, #fd8c00 96.8%);
 }
 
