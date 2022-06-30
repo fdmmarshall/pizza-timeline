@@ -81,11 +81,10 @@
 
 .Timeline-container {
   z-index: 50;
-  position: relative;
   display: flex;
   align-items: center;
-  height: 70vh;
   width: 100%;
+  height: 50vh;
   background-color: #ffffff;
 }
 
