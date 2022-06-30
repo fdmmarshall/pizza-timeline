@@ -1,9 +1,18 @@
 import pizza from "../pizza_1.png";
+import { classNames } from "../helpers/helperFunctions";
 
-export default function PizzaSection() {
+interface PizzaProps {
+  display: boolean;
+}
+
+export default function PizzaSection({ display }: PizzaProps) {
   return (
-    <div className="Pizza-section">
-      <img src={pizza} alt="Pizza" />
+    <div className="Pizza-section" id="Pizza-section">
+      <img
+        src={pizza}
+        alt="Pizza"
+        className={classNames(display === true ? "display" : "hide", "Pizza")}
+      />
     </div>
   );
 }
