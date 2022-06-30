@@ -2,6 +2,9 @@
   text-align: center;
   font-family: "Open Sans", sans-serif;
 }
+.Title-section > img {
+  animation: Title-opacity 5s;
+}
 
 .Text-wrapper {
   padding: 10px;
@@ -54,27 +57,62 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  align-content: flex-start;
+  animation: Pizza-section 5s;
+}
+
+.Pizza {
+  animation: Pizza 7s;
+}
+
+.display {
+  display: block;
+}
+
+.hide {
+  display: none;
 }
 
 .App-header {
-  min-height: 100vh;
+  padding-top: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  background: linear-gradient(90deg, #e63c01 3%, #fd8c00 96.8%);
 }
 
-.App-link {
-  color: #61dafb;
+.App-footer {
+  background: linear-gradient(90deg, #e63c01 3%, #fd8c00 96.8%);
 }
 
-@keyframes App-logo-spin {
+@keyframes Title-opacity {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes Pizza-section {
+  from {
+    transform: translateY(100vh);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes Pizza {
   from {
     transform: rotate(0deg);
+    opacity: 0;
   }
   to {
     transform: rotate(360deg);
+    opacity: 1;
   }
 }
