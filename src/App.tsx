@@ -7,8 +7,13 @@ import TimelineContainer from "components/TimelineContainer";
 import "./App.css";
 
 function App() {
-  const [wholePizzaDisplay, setWholePizzaDisplay] = useState<boolean>(false);
-  const [splitPizzaDisplay, setSplitPizzaDisplay] = useState<boolean>(true);
+  const [wholePizzaDisplay, setWholePizzaDisplay] = useState<boolean>(true);
+  const [splitPizzaDisplay, setSplitPizzaDisplay] = useState<boolean>(false);
+
+  setTimeout(() => {
+    setWholePizzaDisplay(false);
+    setSplitPizzaDisplay(true);
+  }, 7000);
 
   return (
     <div className="App">
@@ -18,7 +23,7 @@ function App() {
       <footer className="App-footer">
         <WholePizza display={wholePizzaDisplay} />
         <TopHalf display={splitPizzaDisplay} />
-        <TimelineContainer display={splitPizzaDisplay} />
+        {splitPizzaDisplay && <TimelineContainer />}
         <BottomHalf display={splitPizzaDisplay} />
       </footer>
     </div>
