@@ -10,3 +10,13 @@
 
 .timestamp {
 }
+
+.icon {
+}
+
+.pizza-info {
+}
+
+.pizza-info > h3 {
+  color: #000000;
+}
