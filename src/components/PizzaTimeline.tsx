@@ -1,22 +1,11 @@
-import { classNames } from "../helpers/helperFunctions";
-import "../style_assets/timeline.module.css";
+import "../style_assets/timeline.css";
 
-interface PizzaTimelineProps {
-  display: boolean;
-}
-
-export default function TimelineContainer({ display }: PizzaTimelineProps) {
+export default function TimelineContainer() {
   return (
     <>
-      <ul
-        className={classNames(
-          display === true ? "display" : "hide",
-          "timeline"
-        )}
-        id="timeline"
-      >
+      <ul className="timeline" id="timeline">
         <li className="dot">
-          <div className="timestamp">
+          <div className="timestamp-top">
             <span className="icon"></span>
             <span className="pizza-info">
               <h3>79 A.D.</h3>
@@ -25,7 +14,7 @@ export default function TimelineContainer({ display }: PizzaTimelineProps) {
           </div>
         </li>
         <li className="dot">
-          <div className="timestamp">
+          <div className="timestamp-bottom">
             <span className="icon"></span>
             <span className="pizza-info">
               <h3>1522</h3>
@@ -34,7 +23,7 @@ export default function TimelineContainer({ display }: PizzaTimelineProps) {
           </div>
         </li>
         <li className="dot">
-          <div className="timestamp">
+          <div className="timestamp-top">
             <span className="icon"></span>
             <span className="pizza-info">
               <h3>1880</h3>
@@ -43,7 +32,7 @@ export default function TimelineContainer({ display }: PizzaTimelineProps) {
           </div>
         </li>
         <li className="dot">
-          <div className="timestamp">
+          <div className="timestamp-bottom">
             <span className="icon"></span>
             <span className="pizza-info">
               <h3>1889</h3>
@@ -52,7 +41,7 @@ export default function TimelineContainer({ display }: PizzaTimelineProps) {
           </div>
         </li>
         <li className="dot">
-          <div className="timestamp">
+          <div className="timestamp-top">
             <span className="icon"></span>
             <span className="pizza-info">
               <h3>1905</h3>
@@ -61,7 +50,7 @@ export default function TimelineContainer({ display }: PizzaTimelineProps) {
           </div>
         </li>
         <li className="dot">
-          <div className="timestamp">
+          <div className="timestamp-bottom">
             <span className="icon"></span>
             <span className="pizza-info">
               <h3>1943</h3>
@@ -70,7 +59,7 @@ export default function TimelineContainer({ display }: PizzaTimelineProps) {
           </div>
         </li>
         <li className="dot">
-          <div className="timestamp">
+          <div className="timestamp-top">
             <span className="icon"></span>
             <span className="pizza-info">
               <h3>1958</h3>
@@ -79,7 +68,7 @@ export default function TimelineContainer({ display }: PizzaTimelineProps) {
           </div>
         </li>
         <li className="dot">
-          <div className="timestamp">
+          <div className="timestamp-bottom">
             <span className="icon"></span>
             <span className="pizza-info">
               <h3>TODAY</h3>
