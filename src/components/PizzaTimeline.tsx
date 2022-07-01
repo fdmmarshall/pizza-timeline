@@ -1,5 +1,5 @@
 import { classNames } from "../helpers/helperFunctions";
-import "../timeline.module.css";
+import "../style_assets/timeline.module.css";
 
 interface PizzaTimelineProps {
   display: boolean;

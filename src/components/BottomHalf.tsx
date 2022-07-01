@@ -1,5 +1,5 @@
 import { classNames } from "../helpers/helperFunctions";
-import bottomPizzaHalf from "../bottom_pizza_half.png";
+import bottomPizzaHalf from "../image_assets/bottom_pizza_half.png";
 
 interface PizzaProps {
   display: boolean;

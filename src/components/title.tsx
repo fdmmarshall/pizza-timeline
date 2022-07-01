@@ -1,4 +1,4 @@
-import pizzaTitle from "../the_pizza_title.png";
+import pizzaTitle from "../image_assets/the_pizza_title.png";
 
 export default function Title() {
   return (

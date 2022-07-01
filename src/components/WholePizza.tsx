@@ -1,4 +1,4 @@
-import pizza from "../pizza_1.png";
+import pizza from "../image_assets/pizza_1.png";
 import { classNames } from "../helpers/helperFunctions";
 
 interface PizzaProps {
