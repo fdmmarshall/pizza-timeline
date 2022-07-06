@@ -1,69 +1,92 @@
 .wrapper {
+  margin: auto;
   width: 100%;
-  height: 100%;
-  margin: 100px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
-.horizontal-timeline-container {
-  display: flex;
-  width: 70%;
-  justify-content: space-between;
-  align-items: center;
+.top-content,
+.bottom-content {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 20px;
+}
+
+.item-one {
+  grid-row: 2 / span 2;
+  justify-self: end;
   align-self: center;
-  align-content: center;
 }
 
-.timeline-block {
-  background: #e63c01;
-  border-radius: 50%;
-  width: 15px;
-  height: 15px;
-  margin: 5px;
+.item-two {
+  justify-self: right;
+  grid-column-start: 2;
+  align-self: self-end;
 }
 
-.line {
-  border-bottom: 2px solid #e63c01;
-  display: block;
-  width: 12%;
+.item-three {
+  grid-column-start: 3;
 }
 
-/* .timeline {
-  list-style-type: none;
+.item-four {
+  grid-column-start: 4;
+  grid-row-start: 2;
+}
+
+.item-five {
+  grid-column-start: 5;
+  grid-row-start: 2;
+}
+
+.item-six {
+  grid-column-start: 6;
+  justify-self: left;
+}
+
+.item-seven {
+  grid-column-start: 6;
+  justify-self: right;
+}
+
+.item-eight {
+  grid-row-start: 2;
+  grid-column-end: 8;
+  justify-self: self-end;
+}
+
+.content {
   display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+}
+
+.horizontal-timeline {
+  display: flex;
+  column-gap: 1rem;
   align-items: center;
   justify-content: center;
-  color: #e63c01;
+}
+.container {
+  width: 10%;
+  display: flex;
+  column-gap: 1rem;
+  flex-direction: row;
 }
 
 .dot {
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  background-color: #e63c01;
+  margin: 0;
+  z-index: 2;
 }
 
-.timestamp-top {
-  margin-bottom: 20px;
-  padding: 0px 40px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-weight: 100;
+hr {
+  align-self: center;
+  background: #e63c01;
+  height: 2px;
+  width: 100%;
+  border-style: none;
 }
-.timestamp-bottom {
-  padding: 0px 40px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-weight: 100;
-  position: relative;
-}
-
-.icon {
-}
-
-.pizza-info {
-}
-
-.pizza-info > h3 {
-  color: #000000;
-} */
