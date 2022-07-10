@@ -4,7 +4,8 @@ module.exports = function override(config, env) {
     ...config.module.rules,
     {
       test: /\.svg$/,
-      use: ["@svgr/webpack"],
+      enforce: "pre",
+      use: ["@svgr/webpack", "url-loader"],
     },
   ];
   return config;
