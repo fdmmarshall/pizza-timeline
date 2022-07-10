@@ -1,8 +1,19 @@
-export * from "./volcano.svg";
-export * from "./tomato.svg";
-export * from "./pizza-slice.svg";
-export * from "./cheese.svg";
-export * from "./dish.svg";
-export * from "./deep-dish.svg";
-export * from "./pizza-hut.svg";
-export * from "./pepperoni-pizza.svg";
+import { ReactComponent as Volcano } from "./volcano.svg";
+import { ReactComponent as Tomato } from "./tomato.svg";
+import { ReactComponent as PizzaSlice } from "./pizza-slice.svg";
+import { ReactComponent as Cheese } from "./cheese.svg";
+import { ReactComponent as Dish } from "./dish.svg";
+import { ReactComponent as DeepDish } from "./deep-dish.svg";
+import { ReactComponent as PizzaHut } from "./pizza-slice.svg";
+import { ReactComponent as PepperoniPizza } from "./pepperoni-pizza.svg";
+
+export {
+  Volcano,
+  Tomato,
+  PizzaSlice,
+  Cheese,
+  Dish,
+  DeepDish,
+  PizzaHut,
+  PepperoniPizza,
+};

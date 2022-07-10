@@ -1,4 +1,14 @@
 import "../style_assets/timeline.css";
+import {
+  Volcano,
+  Tomato,
+  PizzaSlice,
+  Cheese,
+  Dish,
+  DeepDish,
+  PizzaHut,
+  PepperoniPizza,
+} from "image_assets/svgs/svg_exports";
 
 export default function TimelineContainer() {
   return (
@@ -6,7 +16,9 @@ export default function TimelineContainer() {
       <div className="top-content">
         <div className="content-container item-one">
           <div className="content">
-            <div className="svg">SVG</div>
+            <div className="svg">
+              <Volcano />
+            </div>
             <div className="info">
               <h3>79 A.D.</h3>
               <p>text goes here</p>
